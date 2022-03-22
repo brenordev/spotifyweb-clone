@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -58,6 +58,7 @@
             </div>
             
             <div class="box">
+                <button class="btnPlay"><i class="fa-solid fa-play"></i></button>
                 <img src="/img/esqual_img.jpg">
                 <h2>EQUAL Brasil</h2>
                 <p>LUDMILLA e mais mulheres para serem...</p>
@@ -238,23 +239,49 @@
                 <p>Super mega hits! Foto: Dua Lipa</p>
             </div>
         </div>
+        <div class="button-scroll" onclick="scrolltop()">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <footer class="footer_bottom">
+            <div class="footer_link_rel">
+            <div class="footer_empresa">
+            <h3>Empresa</h3>
+                <a href="/">Sobre</a>
+                <a href="/">Empregos</a>
+                <a href="/">For the record</a>
+            </div>
+            <div class="footer_comunidades">
+                <h3>Comunidades</h3>
+                <a href="/">Para Artistas</a>
+                <a href="/">Desenvolvedores</a>
+                <a href="/">Publicidade</a>
+                <a href="/">Investidores</a>
+                <a href="/">Fornecedores</a>
+            </div>
+            <div class="footer_links">
+                <h3>Links Úteis</h3>
+                <a href="/">Suporte</a>
+                <a href="/">Aplicativo móvel grátis</a>
+            </div>
+            </div>
+            <div class="footer_social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+        </footer>
+        
     </section>
     
 </div>
-<footer class="footer_bottom">
-    <h3>Empresa</h3>
-        <a href="/">Sobre</a>
-        <a href="/">Empregos</a>
-        <a href="/">For the record</a>
-    <h3>Comunidades</h3>
-        <a href="/">Para Artistas</a>
-        <a href="/">Desenvolvedores</a>
-        <a href="/">Publicidade</a>
-        <a href="/">Investidores</a>
-        <a href="/">Fornecedores</a>
-    <h3>Lunks Úteis</h3>
-        <a href="/">Suporte</a>
-        <a href="/">Aplicativo móvel grátis</a>
-</footer>
+
 </body>
+<script> /* Função Scroll Top*/
+    function scrolltop(){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
 </html>
