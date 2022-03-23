@@ -229,10 +229,6 @@ body{
     z-index: 4;
     display: none;
 }
-.box:hover .btnPlay{
-    display: inline-block;
-
-}
 .box img{
     max-width: 150px;
     position: relative;
